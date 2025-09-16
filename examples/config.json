@@ -1,0 +1,26 @@
+{
+  "analyzer": {
+    "default_quality": 85,
+    "supported_formats": ["jpg", "jpeg", "png"],
+    "min_image_size": 100
+  },
+  "vision": {
+    "edge_threshold": 0.1,
+    "contrast_weight": 0.3,
+    "color_weight": 0.2,
+    "saliency_weight": 0.5,
+    "min_subject_ratio": 0.1
+  },
+  "cropper": {
+    "preserve_aspect_ratio": true,
+    "allow_upscaling": false,
+    "padding_ratio": 0.1,
+    "quality_threshold": 0.7
+  },
+  "output": {
+    "default_format": "jpg",
+    "output_dir": "./output",
+    "prefix": "",
+    "suffix": "_cropped"
+  }
+}
